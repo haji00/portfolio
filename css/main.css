@@ -24,23 +24,39 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   }
-
+  
   .vision1 {
     background: var(--bs-dark) url(../images/website.jpg) no-repeat center;
     background-size: cover;
-    height: 500px;
+    height: 600px;
   }
   .vision2 {
     background: var(--bs-dark) url(../images/illustration.jpg) no-repeat center;
     background-size: cover;
-    height: 500px
+    height: 600px;
   }
   .vision3 {
     background: var(--bs-dark) url(../images/photography.jpg) no-repeat center;
     background-size: cover;
-    height: 500px
+    height: 600px;
   }
 
-  .navbar {
-    background: var(--bs-light);
+  /* ...................Mobile Styles................... */
+  
+@media screen and (max-width: 760px) {
+  .vision1 {
+    background: var(--bs-dark) url(../images/website.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
   }
+  .vision2 {
+    background: var(--bs-dark) url(../images/illustration.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+  }
+  .vision3 {
+    background: var(--bs-dark) url(../images/photography.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+  }
+}
