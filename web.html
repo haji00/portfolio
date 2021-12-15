@@ -17,18 +17,10 @@
 
 <body class="bg-dark bg-opacity-10">
 
-    <!-- Skip Links -->
-    <div>
-        <ul class="skip-links">
-            <li><a href="#nav">Skip to the main nav</a></li>
-            <li><a href="#main">Skip to the main content</a></li>
-        </ul>
-    </div> 
-
     <!-- Navbar -->
 
     <header>
-        <nav class="navbar navbar-light bg-transparent" id="nav">
+        <nav class="navbar navbar-light bg-transparent">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns:v="https://vecta.io/nano" xmlns="http://www.w3.org/2000/svg"
@@ -52,8 +44,9 @@ c-21.28,0-42.379,26.355-65.929,72.255C271.838,112.328,288.336,74.117,289.375,58.
                     </svg>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="index.html" class="nav-link text-dark">WORK</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link text-dark" style="font-weight: bold;">ABOUT</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link text-dark"
+                            style="font-weight: bold;">WORK</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-dark">ABOUT</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link text-dark">CONTACT</a></li>
                 </ul>
             </div>
@@ -61,45 +54,74 @@ c-21.28,0-42.379,26.355-65.929,72.255C271.838,112.328,288.336,74.117,289.375,58.
     </header>
 
     <main>
-        <!-- Banner Section -->
-        <section class="banner pt-5" id="main">
-            <div class="container banner-info bg-light border">
-                <div class="container">
-                    <div class="row align-items-center justify-content-around">
-                        <div class="col-4 text-dark text-center">
-                            <p>My name is Sepidah, a web designer based in Canada who loves graphics, fashion, and food! I am currently a student in Interactive Media Design, Algonquin College.</p>
-                        </div>
-                        <div class="col-4 py-4 my-4">
-                            <img src="images/about1-150_x_150.jpg" alt="Sepidah's Image" class="img-fluid" id="aboutImage1">
-                        </div>
 
-                        <div class="row align-items-center justify-content-around">
-                            <div class="col-4 py-4 my-4">
-                                <img src="images/about2-150_x_150.jpg" alt="Sepidah's Image" class="img-fluid" id="aboutImage2">
-                            </div>
-                            <div class="col-4 text-dark text-center">
-                                <h2>SOFTWARE KNOWLEDGE</h2>
-                                <ul class="list-unstyled" id="software">
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Illustrator</li>
-                                    <li>Adobe Lightroom</li>
-                                    <li>Adobe Premiere Pro</li>
-                                    <li>Adobe Audition</li>
-                                    <li>WordPress</li>
-                                    <li>Drupal</li>
-                                    <li>HTML-CSS</li>
-                                </ul>
-                                    <br>
-                                <a href="images/SEPIDAH.HY-RESUME.pdf" class="link-secondary" download>Download Resume</a>
-                            </div>
-                        </div>
-                            
+        <section class="container bg-dark text-light" id="workContainer">
+            <div class="row">
+                <div class="col-md-4 pb-4 px-4">
+                    <h1 class="py-sm-2 mt-5">WEBSITE DESIGN</h1>
+                    <p class="pb-sm-2 fs-3 lh-1">DESIGN FOR <br> <b>KOCHU</b> SUSHI</p>
+                    <div>
+                        <button type="button" class="btn btn-light border-secondary rounded-0" id="buttomHover"
+                        data-bs-toggle="modal" data-bs-target="#webModal">
+                           View project
+                         </button>
+                    </div>
+                </div>
+                <div class="col-md-8 py-0 px-0">
+                    <img src="images/web1-600_x_400.jpg" class="img-fluid" id="web1" alt="Two screens showing a sushi website">
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <section class="container bg-dark text-light" id="workContainer2">
+            <div class="row">
+                <div class="col-md-8 py-0 px-0">
+                    <img src="images/app1-600_x_400.jpg" class="img-fluid" id="app1" alt="A cellphone on the ground with dumbbells, a water bottle, and shoes">
+                </div>
+                <div class="col-md-4 pb-4 px-4">
+                    <h1 class="py-sm-2 mt-5">APP DESIGN</h1>
+                    <p class="py-sm-2 fs-3 lh-1">DESIGN FOR <br> <b>WeBurn</b> FITNESS APP</p>
+                    <div>
+                        <button type="button" class="btn btn-light border-secondary rounded-0" id="buttomHover"
+                        data-bs-toggle="modal" data-bs-target="#appModal">
+                           View project
+                         </button>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
+
+      <!-- Modal -->
+    <div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-light text-dark">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">KOCHU RESTAURANT WEBSITE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-web-image">
+                    <img class="modal-img align-content-center" src="images/web2-400_x_292.jpg" alt="project-img">
+                </div>
+              </div>
+        </div>
+     </div>
+    
+     <div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-light text-dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">WeBurn FITNESS APP</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-app-image">
+                <img class="modal-img align-content-center" src="images/app2-400_x_270.jpg" alt="project-img">
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -140,6 +162,6 @@ c-21.28,0-42.379,26.355-65.929,72.255C271.838,112.328,288.336,74.117,289.375,58.
             </div>
         </div>
     </footer>
-    
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

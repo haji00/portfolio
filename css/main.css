@@ -1,62 +1,319 @@
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+/*  SKIP LINKS  */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links a:focus{
+  top: 0;
+}
+
+/*  LOGO Animation  */
+#Layer_1 {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-animation {
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.fil0 {
+  fill: transparent;
+  stroke: black;
+  animation: dash 4.2s linear forwards;
+  stroke-dashoffset: 1900;
+  stroke-dasharray: 1518;
+}
+
+.fil1 {
+  fill: transparent;
+  stroke: darkgray;
+  animation: dash 4s linear forwards;
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1035;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    fill: rgb(117, 114, 114);
   }
-  
+}
+
+/* NAVBAR */
+nav ul li a {
+  position: relative;
+  font-size: 12px;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: gray;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 40%;
+}
+
+nav ul li a:active {
+  font-weight: bold;
+}
+
+/*  BANNER Section */
+#roll-in {
+  animation: roll-in 2s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes roll-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+}
+#software {
+  font-size: 12px;
+}
+.link-secondary {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* WEBSITE DESIGN Section */
+
+.vision1 {
+  background: var(--bs-dark) url(../images/website-600_x_400.jpg) no-repeat center;
+  background-size: cover;
+  height: 300px;
+}
+
+/* ILLUSTRATION Section */
+
+.vision2 {
+  background: var(--bs-dark) url(../images/illustration-600_x_400.jpg) no-repeat center;
+  background-size: cover;
+  height: 300px;
+}
+
+/* PHOTOGRAPHY Section */
+
+.vision3 {
+  background: var(--bs-dark) url(../images/photography-600_x_400.jpg) no-repeat center;
+  background-size: cover;
+  height: 300px;
+}
+
+/* CASE STUDIES PAGES */
+
+#buttomHover:hover {
+  transform: scale(1.1);
+  background-color: #c7c7c7;
+  color: white;
+}
+
+
+#appModal img {
+  content: url(../images/app2-400_x_270.jpg);
+}
+
+#webModal img {
+  content: url(../images/web2-400_x_292.jpg);
+}
+
+#appModal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#webModal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*  CONTACT PAGE  */
+
+#contactForm {
+  width: 50vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#contact-btn {
+  transition: all ease-in-out 300ms;
+}
+
+#contact-btn:hover {
+  background: gray;
+  color: #fff;
+  border-color: gray;
+}
+
+form h1 {
+    font-size: 1rem;
+  }
+textarea {
+  height: 200px;
+}
+
+
+
+/* .......................Desktop Styles....................... */
+/* ---------------- Media Query 760px and above ----------------*/
+
+
+
+@media screen and (min-width: 760px) {
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+/*  HOMEPAGE  */
   .vision1 {
     background: var(--bs-dark) url(../images/website.jpg) no-repeat center;
     background-size: cover;
     height: 600px;
   }
+
   .vision2 {
     background: var(--bs-dark) url(../images/illustration.jpg) no-repeat center;
     background-size: cover;
     height: 600px;
   }
+
   .vision3 {
     background: var(--bs-dark) url(../images/photography.jpg) no-repeat center;
     background-size: cover;
     height: 600px;
   }
 
-  /* ...................Mobile Styles................... */
-  
-@media screen and (max-width: 760px) {
-  .vision1 {
-    background: var(--bs-dark) url(../images/website.jpg) no-repeat center;
-    background-size: cover;
-    height: 300px;
+  /*  ABOUT PAGE  */
+  #aboutImage1 {
+    content: url(../images/about1.jpg);
   }
-  .vision2 {
-    background: var(--bs-dark) url(../images/illustration.jpg) no-repeat center;
-    background-size: cover;
-    height: 300px;
+  #aboutImage2 {
+    content: url(../images/about2.jpg);
   }
-  .vision3 {
-    background: var(--bs-dark) url(../images/photography.jpg) no-repeat center;
-    background-size: cover;
-    height: 300px;
+  #software {
+    font-size: 1rem;
   }
+  .link-secondary {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+ /*  CONTACT PAGE  */
+
+ form h1 {
+  font-size: 1.5rem;
 }
+
+
+/*  CASE STUDY PAGES  */
+
+#workContainer img {
+  content: url(../images/web1.jpg);
+  object-fit: cover;
+}
+#workContainer2 img {
+  content: url(../images/app1.jpg);
+  object-fit: cover;
+}
+#workContainer3 img {
+  content: url(../images/illustration1.png);
+  object-fit: cover;
+}
+#workContainer4 img {
+  content: url(../images/illustration2.png);
+  object-fit: cover;
+}
+#workContainer5 img {
+  content: url(../images/photo1.jpg);
+  object-fit: cover;
+}
+#workContainer6 img {
+  content: url(../images/video1.png);
+  object-fit: cover;
+}
+
+#modal-web-image {
+content: url(../images/web2-1200_x_880.jpg);
+}
+#modal-app-image {
+  content: url(../images/app2-900_x_608.jpg);
+  }
+#photo5 {
+  content: url(../images/photo5.jpg);
+}
+#photo2 {
+  content: url(../images/photo2.jpg);
+}
+#photo3 {
+  content: url(../images/photo3.jpg);
+}
+#photo4 {
+  content: url(../images/photo4.jpg);
+}
+#photo6 {
+  content: url(../images/photo6.jpg);
+}
+#photo7 {
+  content: url(../images/photo7.jpg);
+}
+
+}
+
