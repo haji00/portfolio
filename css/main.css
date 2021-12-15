@@ -204,11 +204,11 @@ textarea {
 
 
 /* .......................Desktop Styles....................... */
-/* ---------------- Media Query 760px and above ----------------*/
+/* ---------------- Media Query 768px and above ----------------*/
 
 
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
 
   nav ul li a {
     font-size: 1rem;
@@ -293,9 +293,7 @@ textarea {
 #modal-web-image {
 content: url(../images/web2-1200_x_880.jpg);
 }
-#modal-app-image {
-  content: url(../images/app2-900_x_608.jpg);
-  }
+
 #photo5 {
   content: url(../images/photo5.jpg);
 }
@@ -314,6 +312,17 @@ content: url(../images/web2-1200_x_880.jpg);
 #photo7 {
   content: url(../images/photo7.jpg);
 }
-
+#app2 {
+  content:url(../images/app2-1100_x_744.jpg)
+}
+#app3 {
+  content:url(../images/app3-1100_x_744.jpg)
+}
+#app4 {
+  content:url(../images/app4-1100_x_744.jpg)
+}
+#app5 {
+  content:url(../images/app5-1100_x_744.jpg)
+}
 }
 
