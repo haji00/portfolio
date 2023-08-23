@@ -1,27 +1,33 @@
 :root {
-
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 /*  SKIP LINKS  */
-.skip-links{
+.skip-links {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.skip-links a{
+.skip-links a {
   position: absolute;
   top: -3em;
   background-color: black;
   color: white;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font-weight: bold;
 }
 
-.skip-links a:focus{
+.skip-links a:focus {
   top: 0;
 }
 
@@ -124,7 +130,8 @@ p {
 /* WEBSITE DESIGN Section */
 
 .vision1 {
-  background: var(--bs-dark) url(../images/website-600_x_400.jpg) no-repeat center;
+  background: var(--bs-dark) url(../images/website-600_x_400.jpg) no-repeat
+    center;
   background-size: cover;
   height: 300px;
 }
@@ -132,7 +139,8 @@ p {
 /* ILLUSTRATION Section */
 
 .vision2 {
-  background: var(--bs-dark) url(../images/illustration-600_x_400.jpg) no-repeat center;
+  background: var(--bs-dark) url(../images/illustration-600_x_400.jpg) no-repeat
+    center;
   background-size: cover;
   height: 300px;
 }
@@ -140,7 +148,8 @@ p {
 /* PHOTOGRAPHY Section */
 
 .vision3 {
-  background: var(--bs-dark) url(../images/photography-600_x_400.jpg) no-repeat center;
+  background: var(--bs-dark) url(../images/photography-600_x_400.jpg) no-repeat
+    center;
   background-size: cover;
   height: 300px;
 }
@@ -152,7 +161,6 @@ p {
   background-color: #c7c7c7;
   color: white;
 }
-
 
 #appModal img {
   content: url(../images/app2-400_x_270.jpg);
@@ -195,21 +203,16 @@ p {
 }
 
 form h1 {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
+}
 textarea {
   height: 200px;
 }
 
-
-
 /* .......................Desktop Styles....................... */
 /* ---------------- Media Query 768px and above ----------------*/
 
-
-
 @media screen and (min-width: 768px) {
-
   nav ul li a {
     font-size: 1rem;
   }
@@ -222,7 +225,7 @@ textarea {
     font-size: 16px;
   }
 
-/*  HOMEPAGE  */
+  /*  HOMEPAGE  */
   .vision1 {
     background: var(--bs-dark) url(../images/website.jpg) no-repeat center;
     background-size: cover;
@@ -256,73 +259,98 @@ textarea {
     font-weight: bold;
     margin-bottom: 1rem;
   }
- /*  CONTACT PAGE  */
+  /*  CONTACT PAGE  */
 
- form h1 {
-  font-size: 1.5rem;
-}
+  form h1 {
+    font-size: 1.5rem;
+  }
 
+  /*  CASE STUDY PAGES  */
 
-/*  CASE STUDY PAGES  */
+  #workContainer img {
+    content: url(../images/web1.jpg);
+    object-fit: cover;
+  }
+  #workContainer2 img {
+    content: url(../images/app1.jpg);
+    object-fit: cover;
+  }
+  #workContainer3 img {
+    content: url(../images/illustration1.png);
+    object-fit: cover;
+  }
+  #workContainer4 img {
+    content: url(../images/illustration2.png);
+    object-fit: cover;
+  }
+  #workContainer5 img {
+    content: url(../images/photo1.jpg);
+    object-fit: cover;
+  }
+  #workContainer6 img {
+    content: url(../images/video1.png);
+    object-fit: cover;
+  }
 
-#workContainer img {
-  content: url(../images/web1.jpg);
-  object-fit: cover;
-}
-#workContainer2 img {
-  content: url(../images/app1.jpg);
-  object-fit: cover;
-}
-#workContainer3 img {
-  content: url(../images/illustration1.png);
-  object-fit: cover;
-}
-#workContainer4 img {
-  content: url(../images/illustration2.png);
-  object-fit: cover;
-}
-#workContainer5 img {
-  content: url(../images/photo1.jpg);
-  object-fit: cover;
-}
-#workContainer6 img {
-  content: url(../images/video1.png);
-  object-fit: cover;
-}
+  #web2 {
+    content: url(../images/web2-1200_x_880.jpg);
+  }
+  #web3 {
+    content: url(../images/web3-1200_x_880.jpg);
+  }
+  #web4 {
+    content: url(../images/web4-1200_x_880.jpg);
+  }
+  #web5 {
+    content: url(../images/web5-1200_x_880.jpg);
+  }
+  #web6 {
+    content: url(../images/web6-1200_x_880.jpg);
+  }
+  #web7 {
+    content: url(../images/web7-1200_x_880.jpg);
+  }
+  #web8 {
+    content: url(../images/web8-1200_x_880.jpg);
+  }
+  #web9 {
+    content: url(../images/web9-1200_x_880.jpg);
+  }
 
-#modal-web-image {
-content: url(../images/web2-1200_x_880.jpg);
+  #photo5 {
+    content: url(../images/photo5.jpg);
+  }
+  #photo2 {
+    content: url(../images/photo2.jpg);
+  }
+  #photo3 {
+    content: url(../images/photo3.jpg);
+  }
+  #photo4 {
+    content: url(../images/photo4.jpg);
+  }
+  #photo6 {
+    content: url(../images/photo6.jpg);
+  }
+  #photo7 {
+    content: url(../images/photo7.jpg);
+  }
+  #app2 {
+    content: url(../images/app2-1100_x_744.jpg);
+  }
+  #app3 {
+    content: url(../images/app3-1100_x_744.jpg);
+  }
+  #app4 {
+    content: url(../images/app4-1100_x_744.jpg);
+  }
+  #app5 {
+    content: url(../images/app5-1100_x_744.jpg);
+  }
+  #app6 {
+    content: url(../images/app6-1100_x_744.jpg);
+  }
+  #app7 {
+    content: url(../images/app7-1100_x_744.jpg);
+  }
 }
-
-#photo5 {
-  content: url(../images/photo5.jpg);
-}
-#photo2 {
-  content: url(../images/photo2.jpg);
-}
-#photo3 {
-  content: url(../images/photo3.jpg);
-}
-#photo4 {
-  content: url(../images/photo4.jpg);
-}
-#photo6 {
-  content: url(../images/photo6.jpg);
-}
-#photo7 {
-  content: url(../images/photo7.jpg);
-}
-#app2 {
-  content:url(../images/app2-1100_x_744.jpg)
-}
-#app3 {
-  content:url(../images/app3-1100_x_744.jpg)
-}
-#app4 {
-  content:url(../images/app4-1100_x_744.jpg)
-}
-#app5 {
-  content:url(../images/app5-1100_x_744.jpg)
-}
-}
-
